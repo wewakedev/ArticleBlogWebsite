@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+#mainheader{
+  background-color: rgb(255,192,203,.7);
+  font-family: Lobster,fantasy;
+  margin:10px;
+  padding:0px;
+  position: fixed;
+  width: 30%;
+  height: 9%;
+  border-left: 10px solid rgb(255,20,147);
+}
+a:link{
+  color: blue;
+}
+a:hover{
+  color: black;
+  background: rgb(255,20,147,0.2);
+}
+a{
+  text-decoration: none;
+}
+body{
+  margin:0px;
+}
+header,h4{
+  margin: 10px 10px 0px 10px;
+}
+header> p{
+  text-decoration: overline;
+  margin: 0px;
+  color: #df80ff;
+}
+#musicarticle {
+  width: 1000px;
+  margin: auto;
+}
+article {
+  max-width:30%;
+  padding:20px;
+  background-color: #b1becc;
+  margin-bottom: 20px;
+  float: right;
+  margin: 10px 5px 10px 20px;
+
+}
+article img{
+  max-width: 80%;
+  height: 100px;
+display: inline-block;
+}
+article h4,p{
+  margin:0px;
+}
+  ul{
+      list-style-type: none;
+      margin: 0px 2px 50px 2px;
+      padding: 0px 2px 0px 1000px;
+      background-color:pink;
+      border: 1px solid ;
+      border-right: 1px;
+      font-style:oblique ;
+      display: flex;
+      float: right;
+      text-shadow: 1px -1px 5px;
+
+    }
+    li{
+      padding: 15px;
+    }
+    .myinput{
+      border-width: 0px 0px 0px 1px;
+      text-align: left;
+      font-weight: 100px;}
+    .myinput:focus {
+        background-color:#f29de7;
+        color: #140e14;
+      }
+h2{
+  font-family: monospace;
+  text-align: left;
+  margin: 10px 500px 5px 10px;
+  border: 1px solid;
+  box-shadow: 1px 2px 3px;
+  font-style: italic;
+ }
+ #mainarticle p{
+   text-align: left;
+   font-family: roboto condensed;
+    word-spacing: 4px;
+    margin: 10px 10px 20px;
+}
+#mainarticle img{
+  border: 1px solid;
+  margin:10px 30px 40px 30px;
+  box-shadow: 2px 2px 5px;
+
+}
+img:active{
+  opacity: .5;
+}
+#sign_in,#log_in{
+  float: right;
+  background-color: lightpink;
+  box-shadow: 2px 4px;
+}
+button:hover{
+  background-color:pink;
+
+}
