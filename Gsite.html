@@ -4,66 +4,88 @@
 
 <head>
   <title>MusicUpdates!</title>
-  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta name="description:" content="We are here to make you aware you about the hollywood gossips">
   <meta name="author" content="Vivek Rawat">
   <meta name="viewpoint" content="width-device-width,initial-scale=1.0">
-  <link rel="stylesheet" href="D:\Project1UD\css\style.css" />\
-  <script type="text/javascript" src="D:\Project1UD\js\main.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="main.js"></script>
 
 </head>
 
-<body>
+<body onload="load()">
+  <div id="loading">pls wait...</div>
+
+
+
   <div id=mainheader>
     <h1>HollywoodLife </h1>
   </div>
+
+
   <header>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Playlists</a></li>
-      <li><a href="#">More</a></li>
-      <input placeholder="Search.." class="myinput" />
-    </ul>
-    <button id="sign_in" >Sign in</button>
+    <div class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Playlists</a></li>
+        <li><a href="#">More</a></li>
+        <input type="text" name="search" placeholder="Search.." class="myinput">
+      </ul>
+    </div>
+    <button id="sign_in">Sign in</button>
     <button id="log_in">Log in</button>
-    <h4>Lets Check for Updates!</h4>
+
+    <h4> Let's Check for Updates!</h4>
     <p><i> We will bring you latest news & crispy gossips going on
         inside the hollywood.</i></p><br>
   </header>
 
 
-  <section id="musicarticle">
-    <article>
-      <img src="kanyewest2020.jpg" />
-      <h4>See what kanye has to say on his 2020 presidential elections.</h4>
-      <p>Kanye West is not happy with the USA current President Trump, calls him a fat orange.....<a href="#">Read more..</a></p>
-
-      <img src="kenkyle.jpg" />
-      <h4>Kylie cosmetics launches kendall jenner collections.</h4>
-      <p>Kylie Jenner collabs with sister Kendall Jenner for a new product in kylie cosmetics.....<a href="#">Read more..</a></p>
-
-      <img src="travis.jpg" />
-      <h4>Kylie Jenner ex-boyfriend Travis Scott released a track with..</h4>
-      <p>Travis Scott releases a new track "TKN" with kylie's best friend Rosilia....<a href="#">Read more..</a></p>
-
-    </article>
-  </section>
-
-  <section id="mainarticle">
-
-    <h2>Justin Bieber and Hailey Baldwin head out on a road trip together while Selena Gomez takes guitar lessons in her new house.</h2>
-    <p>Justin Bieber and Hailey Baldwin are one of the most popular young couples in Hollywood, who enjoy a huge fan following on social media. While the pop sensation is known for keeping his millions of followers on their toes by giving them a
-      glimpse of his life,
-      his wife Hailey too seems to have joined her hubby now.The 'Yummy' singer recently took to Instagram to share pictures
-      from their road trip. While Justin can be seen showing off his tattoos in an unzipped maroon hoodie and shorts,
-      the stunning model looks mesmerising in multi-coloured baggy pants and sky blue crop top.</p>
-    <img src="jb.jpg" alt="justinnews" style=width="300px" height="400px">
-
-  </section>
 
 
+  <div class="main">
+    <div class="mainarticle" id="mainarticle">
+      <h2>Justin Bieber and Hailey Baldwin head out on a road trip together while Selena Gomez takes guitar lessons in
+        her new house.</h2>
+      <p>Justin Bieber and Hailey Baldwin are one of the most popular young couples in Hollywood, who enjoy a huge fan
+        following on social media. While the pop sensation is known for keeping his millions of followers on their toes
+        by giving them a
+        glimpse of his life,
+        his wife Hailey too seems to have joined her hubby now.The 'Yummy' singer recently took to Instagram to share
+        pictures
+        from their road trip. While Justin can be seen showing off his tattoos in an unzipped maroon hoodie and shorts,
+        the stunning model looks mesmerising in multi-coloured baggy pants and sky blue crop top.</p>
+      <img src="jb.jpg" alt="justinnews" class="mainarticle_img">
+    </div>
+
+    <div id="musicarticle" class="musicarticle">
+      <article>
+        <img src="kanyewest2020.jpg" />
+        <h4>See what kanye has to say on his 2020 presidential elections.</h4>
+        <p>Kanye West is not happy with the USA current President Trump, calls him a fat orange.....<a href="#">Read
+            more..</a></p>
+
+        <img src="kenkyle.jpg" />
+        <h4>Kylie cosmetics launches kendall jenner collections.</h4>
+        <p>Kylie Jenner collabs with sister Kendall Jenner for a new product in kylie cosmetics.....<a href="#">Read
+            more..</a></p>
+
+        <img src="travis.jpg" />
+        <h4>Kylie Jenner ex-boyfriend Travis Scott released a track with..</h4>
+        <p>Travis Scott releases a new track "TKN" with kylie's best friend Rosilia....<a href="#">Read more..</a></p>
+
+      </article>
+    </div>
+
+  </div>
+  <script>
+    var preloader = document.getElementById("loading");
+    function load() {
+      preloader.style.display = 'none';
+    };
+  </script>
 </body>
 
 </html>
